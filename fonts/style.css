@@ -1,0 +1,38 @@
+
+@font-face {
+	font-family: 'ApexNew-Medium';
+	src: url('ApexNew-Medium.eot'); /* IE9 Compat Modes */
+	src: url('ApexNew-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('ApexNew-Medium.woff') format('woff'), /* Modern Browsers */
+		url('ApexNew-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('ApexNew-Medium.svg#ApexNewMedium') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'ApexNew-Book';
+	src: url('ApexNew-Book.eot'); /* IE9 Compat Modes */
+	src: url('ApexNew-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('ApexNew-Book.woff') format('woff'), /* Modern Browsers */
+		url('ApexNew-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('ApexNew-Book.svg#ApexNewBook') format('svg'); /* Legacy iOS */
+}
+
+body {
+   font-smooth:always !important;
+   -webkit-font-smoothing: antialiased !important;
+   font-family: "ApexNew-Medium", Helvetica, Arial, sans-serif;
+}
+
+.book {
+	font-family: "ApexNew-Book", Helvetica, Arial, sans-serif;
+}
+
+b {
+	font-family: "ApexNew-Medium", Helvetica, Arial, sans-serif;
+}
+
+.font-fix {
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=hIEfix.png,sizingMethod=crop);
+	zoom: 1;
+}

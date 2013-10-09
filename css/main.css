@@ -1,0 +1,127 @@
+body, #container {
+    width: 310px;
+    height: 400px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #255795;
+    color: white;
+    font-size: 12px;
+    position: relative;
+}
+
+#slides, #overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#slides {
+    z-index: 100;
+}
+
+#slides .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes swing1 {
+    0% {transform: rotate(-1deg);}
+    50% {transform: rotate(1deg);}
+    100% {transform: rotate(-1deg);}
+}
+
+@-webkit-keyframes swing1 {
+    0% {-webkit-transform: rotate(-1deg);}
+    50% {-webkit-transform: rotate(1deg);}
+    100% {-webkit-transform: rotate(-1deg);}
+}
+
+@keyframes swing2 {
+    0% {transform: rotate(1deg);}
+    50% {transform: rotate(-1deg);}
+    100% {transform: rotate(1deg);}
+}
+
+@-webkit-keyframes swing2 {
+    0% {-webkit-transform: rotate(1deg);}
+    50% {-webkit-transform: rotate(-1deg);}
+    100% {-webkit-transform: rotate(1deg);}
+}
+
+#endurskinsmerki .mikki, #endurskinsmerki .minna {
+    position: absolute;
+    top:0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+}
+
+#endurskinsmerki .mikki {
+    right: -1px;
+    animation-name: 'swing1';
+    -webkit-animation-name: 'swing1';
+}
+
+#endurskinsmerki .minna {
+    left: 2px;
+    animation-name: 'swing2';
+    -webkit-animation-name: 'swing2';
+}
+
+
+#slides .photo {
+    background: transparent url(../img/photo.jpg) no-repeat;
+}
+
+#overlay {
+    z-index: 200;
+    background: transparent url(../img/overlay.png) 0 100% no-repeat;   
+}
+
+#overlay h1 {
+    padding-left: 17px;
+    padding-top: 238px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#overlay h2 {
+    position: relative;
+    padding-left: 17px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#overlay h2 .line {
+    position: absolute;
+    background-color: #ec7b18;
+    width: 205px;
+    height: 4px;
+    top: -12px;
+    left: 0px;
+    margin-left: -205px;
+}
+
+#arionlogo {
+    width:137px;
+    height:31px;
+    background-image:url(../img/arionlogo31.png);
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+    z-index: 20;
+}
