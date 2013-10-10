@@ -125,3 +125,17 @@ body, #container {
     right: 18px;
     z-index: 20;
 }
+
+#copyrightDisney {
+    width:137px;
+    height:31px;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    position: absolute;
+    color: #8b9cb2;
+    top: 140px;
+    font-size:9px;
+    left: -48px;
+    z-index: 20;
+}
